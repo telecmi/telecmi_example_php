@@ -19,18 +19,18 @@ Prerequisites for php web server.
 
 Use command __git clone__ to clone the php webserver from our <a href="https://github.com/telecmi/telecmi_example_php" target="_blank">TeleCMI github repository</a>.
 
-```bash
-$ git clone https://github.com/telecmi/telecmi_example_php.git
-$ cd telecmi_example_php
-```
-### Install PHP and composer
 
 ```bash
-$ sudo apt install php7.3-cli
+git clone https://github.com/telecmi/telecmi_example_php.git
 ```
+
+Change the directory to your project directory
 ```bash
-$ sudo apt install composer
+ cd telecmi_example_php
 ```
+
+Install required package using composer
+
 ```bash
 $ composer install
 ```
@@ -68,7 +68,7 @@ Forwarding                    https://c654b286.ngrok.io -> http://localhost:5000
 Connections                   ttl     opn     rt1     rt5     p50     p90       
                               0       0       0.00    0.00    0.00    0.00  
 ```
-Now you can get your dynamic URL from the above output. To configure webhooks and live events, paste your dynamic URL with correct path in webhooks section.
+Now you can get your dynamic URL from the above output. To configure webhooks and live events, paste your dynamic URL with correct path in <a href="https://doc.telecmi.com/chub/docs/incoming-webhooks#where-to-place-your-web-server-url-" target="_blank">webhooks section</a>.
 
 #### Sample URL with path
 ```
